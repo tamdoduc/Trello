@@ -38,7 +38,7 @@ $column-border-radius: 5px;
       border-bottom-right-radius: 10px;
     }
 
-    ul.task-list{
+    ul.card-list{
       list-style-type: none;
       margin: 0;
       max-height: calc(100% - #{$column-header-height} - #{$column-footer-height});
