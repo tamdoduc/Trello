@@ -7,7 +7,18 @@ import Column from "components/Column/Column";
 
 function BoardContent(){
     return  <div className="board-contents">
-      <Column />
+      <Column/>
+      <Column/>
+      <Column/>
+      <Column/>
+      <Column/>
+      <Column/>
+      <Column/>
+      <Column/>
+      <Column/>
+      <Column/>
+      <Column/>
+      <Column/>
   </div>
 }
 
