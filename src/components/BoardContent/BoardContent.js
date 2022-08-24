@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { isEmpty } from "lodash";
+import React, { useState, useEffect } from 'react'
+import { Container, Draggable } from 'react-smooth-dnd'
+import { isEmpty } from 'lodash'
 
-import './BoardContent.scss';
+import './BoardContent.scss'
 
 
-import Column from "components/Column/Column";
-import {mapOrder} from "utilities/sorts"
+import Column from 'components/Column/Column'
+import { mapOrder } from 'utilities/sorts'
 
 import { initialData } from 'actions/initialData';
 
@@ -19,7 +20,7 @@ function BoardContent() {
       setBoard(boardFormDB)
 
 
-      setColumns(mapOrder(boardFormDB.columns,boardFormDB.columnOrder,'id'));
+      setColumns(mapOrder(boardFormDB.columns, boardFormDB.columnOrder, 'id'));
     }
   }, []
   )
@@ -28,11 +29,14 @@ function BoardContent() {
     return <div className="not-found" >Board not found</div>
   }
   if (isEmpty(columns))
-  return <div className="not-found" >Columns not found</div>
+    return <div className="not-found" >Columns not found</div>
 
   return (
     <div className="board-content">
       {columns.map((column, index) => <Column key={index} column={column} />)}
+      <div className="add-new-column">
+      <i className="fa fa-plus icon" />    Add another column
+      </div>
     </div>
   )
 }

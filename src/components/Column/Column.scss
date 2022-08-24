@@ -36,6 +36,14 @@ $column-border-radius: 5px;
       font-size: 14px;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
+      color: #888;
+      .footer-actions {
+        margin-left: $gap;
+        cursor: pointer;
+        &:hover {
+          color: $app-main-text-color;
+        }
+      }
     }
 
     ul.card-list{
