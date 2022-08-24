@@ -1,8 +1,7 @@
-import React from "react";
+import React from 'react'
+import './BoardBar.scss'
 
-import './BoardBar.scss';
-
-function BoardBar(){
+function BoardBar() {
     return <nav className="navbar-board">App Board</nav>
 }
 

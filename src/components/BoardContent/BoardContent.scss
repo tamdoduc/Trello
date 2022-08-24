@@ -1,17 +1,33 @@
-@import '_settings.scss';
+@import "_settings.scss";
 
-.board-content{
-    display: flex;
-    margin : 0 $gap $gap $gap;
-    overflow-x: auto;
-    &::-webkit-scrollbar {
-      -webkit-appearance: none;
-    }
-    &::-webkit-scrollbar:horizontal {
-      height: 11px;
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color:$common-element-bg;
-      border-radius:8px;
+.board-content {
+  display: flex;
+  margin: 0 $gap $gap $gap;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 11px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $common-element-bg;
+    border-radius: 8px;
+  }
+  .add-new-column {
+    width: 250px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 4px 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: $gap;
+    font-size:15px;
+    background-color: hsla(0,0,100,.24);
+    border-radius: 5px;
+    &:hover{
+      background-color: hsla(0,0,100,.34);
+      cursor: pointer;
     }
   }
+}
